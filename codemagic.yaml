@@ -1,0 +1,18 @@
+workflows:
+  ios-development:
+    name: Photobooth iOS Build
+    max_build_duration: 60
+    environment:
+      xcode: latest
+    scripts:
+      - name: Build
+        script: |
+          xcodebuild \
+            -project Photobooth/Photobooth.xcodeproj \
+            -scheme Photobooth \
+            -sdk iphoneos \
+            -configuration Debug \
+            CODE_SIGNING_ALLOWED=NO
+    artifacts:
+      - "**/*.ipa"
+      - "**/build/**/*.app"
