@@ -1,6 +1,3 @@
-cat /home/claude/Photobooth/Photobooth/Services/PrintService.swift
-Sortie
-
 import UIKit
 import SwiftUI
 
