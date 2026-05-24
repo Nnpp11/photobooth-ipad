@@ -1,0 +1,367 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A001 /* PhotoboothApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B001 /* PhotoboothApp.swift */; };
+		A002 /* DesignSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = B002 /* DesignSystem.swift */; };
+		A003 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = B003 /* Models.swift */; };
+		A004 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = B004 /* AppState.swift */; };
+		A005 /* CameraService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B005 /* CameraService.swift */; };
+		A006 /* ImageComposer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B006 /* ImageComposer.swift */; };
+		A007 /* PrintService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B007 /* PrintService.swift */; };
+		A008 /* ShareService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B008 /* ShareService.swift */; };
+		A009 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B009 /* RootView.swift */; };
+		A010 /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B010 /* WelcomeView.swift */; };
+		A011 /* CaptureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B011 /* CaptureView.swift */; };
+		A012 /* PreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B012 /* PreviewView.swift */; };
+		A013 /* ConsentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B013 /* ConsentView.swift */; };
+		A014 /* ShareView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B014 /* ShareView.swift */; };
+		A015 /* PrintView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B015 /* PrintView.swift */; };
+		A016 /* AdminView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B016 /* AdminView.swift */; };
+		A017 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B017 /* Assets.xcassets */; };
+		A018 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B018 /* Info.plist */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		B001 /* PhotoboothApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoboothApp.swift; sourceTree = "<group>"; };
+		B002 /* DesignSystem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignSystem.swift; sourceTree = "<group>"; };
+		B003 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models/Models.swift; sourceTree = "<group>"; };
+		B004 /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModels/AppState.swift; sourceTree = "<group>"; };
+		B005 /* CameraService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Services/CameraService.swift; sourceTree = "<group>"; };
+		B006 /* ImageComposer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Services/ImageComposer.swift; sourceTree = "<group>"; };
+		B007 /* PrintService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Services/PrintService.swift; sourceTree = "<group>"; };
+		B008 /* ShareService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Services/ShareService.swift; sourceTree = "<group>"; };
+		B009 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Views/RootView.swift; sourceTree = "<group>"; };
+		B010 /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Views/WelcomeView.swift; sourceTree = "<group>"; };
+		B011 /* CaptureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Views/CaptureView.swift; sourceTree = "<group>"; };
+		B012 /* PreviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Views/PreviewView.swift; sourceTree = "<group>"; };
+		B013 /* ConsentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Views/ConsentView.swift; sourceTree = "<group>"; };
+		B014 /* ShareView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Views/ShareView.swift; sourceTree = "<group>"; };
+		B015 /* PrintView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Views/PrintView.swift; sourceTree = "<group>"; };
+		B016 /* AdminView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Views/AdminView.swift; sourceTree = "<group>"; };
+		B017 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B018 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		PROD /* Photobooth.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Photobooth.app; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FRMW /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = ();
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		MAIN /* Photobooth */ = {
+			isa = PBXGroup;
+			children = (
+				B001 /* PhotoboothApp.swift */,
+				B002 /* DesignSystem.swift */,
+				B003 /* Models.swift */,
+				B004 /* AppState.swift */,
+				B005 /* CameraService.swift */,
+				B006 /* ImageComposer.swift */,
+				B007 /* PrintService.swift */,
+				B008 /* ShareService.swift */,
+				B009 /* RootView.swift */,
+				B010 /* WelcomeView.swift */,
+				B011 /* CaptureView.swift */,
+				B012 /* PreviewView.swift */,
+				B013 /* ConsentView.swift */,
+				B014 /* ShareView.swift */,
+				B015 /* PrintView.swift */,
+				B016 /* AdminView.swift */,
+				B017 /* Assets.xcassets */,
+				B018 /* Info.plist */,
+			);
+			path = Photobooth;
+			sourceTree = "<group>";
+		};
+		ROOT = {
+			isa = PBXGroup;
+			children = (
+				MAIN /* Photobooth */,
+				PROD_GRP /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		PROD_GRP /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				PROD /* Photobooth.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		TARGET /* Photobooth */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CFGLIST;
+			buildPhases = (
+				SRCPH /* Sources */,
+				FRMW /* Frameworks */,
+				RESPH /* Resources */,
+			);
+			buildRules = ();
+			dependencies = ();
+			name = Photobooth;
+			productName = Photobooth;
+			productReference = PROD /* Photobooth.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		PROJECT /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					TARGET = {
+						CreatedOnToolsVersion = 15.0;
+					};
+				};
+			};
+			buildConfigurationList = PROJCFG;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = fr;
+			hasScannedForEncodings = 0;
+			knownRegions = (en, fr, Base);
+			mainGroup = ROOT;
+			productRefGroup = PROD_GRP /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (TARGET /* Photobooth */);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		RESPH /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A017 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		SRCPH /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A001 /* PhotoboothApp.swift in Sources */,
+				A002 /* DesignSystem.swift in Sources */,
+				A003 /* Models.swift in Sources */,
+				A004 /* AppState.swift in Sources */,
+				A005 /* CameraService.swift in Sources */,
+				A006 /* ImageComposer.swift in Sources */,
+				A007 /* PrintService.swift in Sources */,
+				A008 /* ShareService.swift in Sources */,
+				A009 /* RootView.swift in Sources */,
+				A010 /* WelcomeView.swift in Sources */,
+				A011 /* CaptureView.swift in Sources */,
+				A012 /* PreviewView.swift in Sources */,
+				A013 /* ConsentView.swift in Sources */,
+				A014 /* ShareView.swift in Sources */,
+				A015 /* PrintView.swift in Sources */,
+				A016 /* AdminView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		CFG_DEBUG /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("DEBUG=1", "$(inherited)");
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CFG_RELEASE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		TCFG_DEBUG /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = Photobooth/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.photobooth.app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = iphoneos;
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		TCFG_RELEASE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = Photobooth/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.photobooth.app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = iphoneos;
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CFGLIST /* Build configuration list for PBXNativeTarget "Photobooth" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (TCFG_DEBUG /* Debug */, TCFG_RELEASE /* Release */);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		PROJCFG /* Build configuration list for PBXProject "Photobooth" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (CFG_DEBUG /* Debug */, CFG_RELEASE /* Release */);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = PROJECT /* Project object */;
+}
