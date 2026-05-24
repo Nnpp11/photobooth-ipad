@@ -190,7 +190,7 @@ struct AdminView: View {
 
     var adminTabBar: some View {
         HStack(spacing: 0) {
-            ForEach(["Événement", "Pré-vol", "Galerie", "Réglages"].enumerated().map({ $0 }), id: \.offset) { i, title in
+            ForEach(Array(["Événement", "Pré-vol", "Galerie", "Réglages"].enumerated()), id: \.offset) { i, title in
                 Button {
                     withAnimation(DS.Animation.smooth) { selectedTab = i }
                 } label: {
@@ -199,7 +199,7 @@ struct AdminView: View {
                             .font(DS.Font.label(14, weight: selectedTab == i ? .semibold : .regular))
                             .foregroundColor(selectedTab == i ? DS.Color.gold : DS.Color.muted)
                         Rectangle()
-                            .fill(selectedTab == i ? DS.Gradient.gold : AnyShapeStyle(Color.clear))
+                            .fill(selectedTab == i ? AnyShapeStyle(DS.Gradient.gold) : AnyShapeStyle(Color.clear))
                             .frame(height: 2)
                     }
                     .frame(maxWidth: .infinity)
@@ -309,11 +309,16 @@ struct PreflightTab: View {
     func runChecks() {
         let batteryLevel = UIDevice.current.batteryLevel
         let batteryOk = batteryLevel > 0.2 || batteryLevel == -1
-
         let freeSpace = freeDiskSpace()
-        let spaceOk = freeSpace > 500_000_000 // 500 MB
+        let spaceOk = freeSpace > 500_000_000
+        let networkOk = true
 
-        let networkOk = true // Simplified
+        checks = [
+            ("Batterie", "Vérification…", false),
+            ("Stockage libre", "Vérification…", false),
+            ("Réseau / SIM", "Vérification…", false),
+            ("Imprimante", "Vérification…", false),
+        ]
 
         printService.checkPrinterAvailability()
         DispatchQueue.main.asyncAfter(deadline: .now() + 1.5) {
@@ -325,12 +330,6 @@ struct PreflightTab: View {
             ]
         }
         UIDevice.current.isBatteryMonitoringEnabled = true
-        checks = [
-            ("Batterie", "Vérification…", false),
-            ("Stockage libre", "Vérification…", false),
-            ("Réseau / SIM", "Vérification…", false),
-            ("Imprimante", "Vérification…", false),
-        ]
     }
 
     func freeDiskSpace() -> Int64 {
@@ -392,7 +391,6 @@ struct SettingsAdminTab: View {
                 SectionHeader("Sécurité")
 
                 AdminField(label: "Nouveau PIN (4 chiffres)", placeholder: "••••", text: $newPin)
-                    .keyboardType(.numberPad)
                 AdminField(label: "Confirmer le PIN", placeholder: "••••", text: $confirmPin)
 
                 if !pinError.isEmpty {
@@ -516,7 +514,9 @@ struct SaveButton: View {
             .frame(height: 52)
             .background(
                 RoundedRectangle(cornerRadius: DS.Radius.md)
-                    .fill(saved ? DS.Color.success.opacity(0.2) : AnyShapeStyle(DS.Gradient.gold))
+                    .fill(saved
+                          ? AnyShapeStyle(DS.Color.success.opacity(0.2))
+                          : AnyShapeStyle(DS.Gradient.gold))
                     .overlay(
                         RoundedRectangle(cornerRadius: DS.Radius.md)
                             .strokeBorder(saved ? DS.Color.success.opacity(0.5) : Color.clear, lineWidth: 1)
