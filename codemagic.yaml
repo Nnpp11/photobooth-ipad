@@ -13,6 +13,12 @@ workflows:
             -sdk iphoneos \
             -configuration Debug \
             CODE_SIGNING_ALLOWED=NO
+      - name: Package IPA
+        script: |
+          cd ~/Library/Developer/Xcode/DerivedData/Photobooth-*/Build/Products/Debug-iphoneos/
+          mkdir -p Payload
+          cp -r Photobooth.app Payload/
+          zip -r Photobooth.ipa Payload/
+          cp Photobooth.ipa $CM_BUILD_DIR/
     artifacts:
-      - "**/*.ipa"
-      - "**/build/**/*.app"
+      - $CM_BUILD_DIR/Photobooth.ipa
